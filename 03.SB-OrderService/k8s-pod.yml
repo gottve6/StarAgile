@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: orderservice-rs
+  labels:
+    app: orderservice
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: orderservice
+  template:
+    metadata:
+      name: orderservice
+      labels:
+        app: orderservice
+    spec:
+      containers:
+        - name: orderservice
+          image: vgottemukkal/order-service
+          imagePullPolicy: IfNotPresent
+      restartPolicy: Always

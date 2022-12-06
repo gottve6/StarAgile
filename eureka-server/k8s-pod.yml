@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: eureakservice-rs
+  labels:
+    app: eureakservice
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: eureakservice
+  template:
+    metadata:
+      name: eureakservice
+      labels:
+        app: eureakservice
+    spec:
+      containers:
+        - name: eureakservice
+          image: vgottemukkal/eureka-service
+          imagePullPolicy: IfNotPresent
+      restartPolicy: Always
