@@ -1,0 +1,17 @@
+
+zookeeper-server-start.bat .\config\zookeeper.properties
+
+.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+--------------
+
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+-----------------
+.\bin\windows\kafka-topics.bat --create --topic <topic_name> --bootstrap-server localhost:9092 --replication-factor 1 --partitions 6
+
+.\bin\windows\kafka-console-consumer -bootstrap-server localhost:9092 -topic <topic_name>
+
+.\bin\windows\kafka-console-producer -bootstrap-server localhost:9092 -topic <topic_name>
+-----------------
+
+listeners=PLAINTEXT://127.0.0.1:9092
+
