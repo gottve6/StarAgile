@@ -1,0 +1,9 @@
+package com.dxc.config;
+
+public class StorageConfig {
+	
+	private String accessKey;
+	private String secretKey;
+	private String region;
+
+}

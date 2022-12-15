@@ -1,0 +1,27 @@
+package calculatorApp;
+
+import java.util.Scanner;
+
+public class CalculatorMain {
+	
+	Calculator calc = new Calculator();
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		
+		
+		int result1 = sum(a,b);
+		
+		
+		
+
+	}
+
+	private static int sum(int a, int b) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

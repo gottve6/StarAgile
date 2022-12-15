@@ -1,0 +1,2 @@
+spring.application.name=Spring Boot With AWS
+server.port=3333

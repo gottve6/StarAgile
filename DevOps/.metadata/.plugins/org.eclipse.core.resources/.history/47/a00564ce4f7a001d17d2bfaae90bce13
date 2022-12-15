@@ -1,0 +1,49 @@
+package calculatorApp;
+
+import java.util.Scanner;
+
+public class CalculatorMain {
+	
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		
+		
+		int result1 = sum(a,b);
+		System.out.println(result1);
+		
+		int result2 = subtraction(a,b);
+		System.out.println(result1);
+		
+		int result3 = multiplication(a,b);
+		System.out.println(result1);
+		
+		int result4 = division(a,b);
+		System.out.println(result1);
+		
+
+	}
+
+	private static int division(int a, int b) {
+		// TODO Auto-generated method stub
+		return a/b;
+	}
+
+	private static int multiplication(int a, int b) {
+		// TODO Auto-generated method stub
+		return a*b;
+	}
+
+	private static int subtraction(int a, int b) {
+		// TODO Auto-generated method stub
+		return a-b;
+	}
+
+	private static int sum(int a, int b) {
+		// TODO Auto-generated method stub
+		return a+b;
+	}
+
+}

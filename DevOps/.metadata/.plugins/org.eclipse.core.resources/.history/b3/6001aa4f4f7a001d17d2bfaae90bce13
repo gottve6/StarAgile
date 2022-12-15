@@ -1,0 +1,8 @@
+package calculatorApp;
+
+public class Subtract {
+ 
+	public void subtraction(int a, int b) {
+		System.out.println(a-b);
+	}
+}

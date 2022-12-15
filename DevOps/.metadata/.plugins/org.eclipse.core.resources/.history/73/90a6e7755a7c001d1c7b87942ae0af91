@@ -1,0 +1,6 @@
+server.port=9999
+
+cloud.aws.credentials.access-key=AKIAYPM2YFR46DEKQBHJ
+cloud.aws.credentials.secret-key=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
+cloud.aws.region.static=ap-south-1
+cloud.aws.stack.auto=false

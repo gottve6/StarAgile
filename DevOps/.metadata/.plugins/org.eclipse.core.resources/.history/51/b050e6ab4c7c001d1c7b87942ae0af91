@@ -1,0 +1,13 @@
+package com.dxc.service;
+
+import org.springframework.web.multipart.MultipartFile;
+
+public class AWSServiceImpl implements AWSService {
+
+	@Override
+	public String uploadFile(MultipartFile multipartFile) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

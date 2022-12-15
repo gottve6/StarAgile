@@ -1,0 +1,12 @@
+package com.dxc.config;
+
+import org.springframework.beans.factory.annotation.Value;
+
+public class StorageConfig {
+	
+	@Value("${cloud.aws.credentials.access-key}")
+	private String accessKey;
+	private String secretKey;
+	private String region;
+
+}

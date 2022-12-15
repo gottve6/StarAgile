@@ -1,0 +1,23 @@
+package calculatorApp;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class CalculatorMainTest {
+	
+	private CalculatorMain main;
+	@Before
+	public void setUp() {
+	main=new CalculatorMain();
+	}
+
+	@Test
+	public void testSum() {
+		int a = 15, b = 5;
+		int ExpectedResult=20;
+		int actualResult=
+	}
+
+}
